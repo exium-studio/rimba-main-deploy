@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/about-us/activity/[activityId]",
+      "regex": "^/about\\-us/activity/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPactivityId": "nxtPactivityId"
+      },
+      "namedRegex": "^/about\\-us/activity/(?<nxtPactivityId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/about-us/news/[newsSlug]",
+      "regex": "^/about\\-us/news/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnewsSlug": "nxtPnewsSlug"
+      },
+      "namedRegex": "^/about\\-us/news/(?<nxtPnewsSlug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/document/[docsId]",
+      "regex": "^/document/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPdocsId": "nxtPdocsId"
+      },
+      "namedRegex": "^/document/(?<nxtPdocsId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/related-apps/kmis/my-topic/[topicId]",
+      "regex": "^/related\\-apps/kmis/my\\-topic/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPtopicId": "nxtPtopicId"
+      },
+      "namedRegex": "^/related\\-apps/kmis/my\\-topic/(?<nxtPtopicId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[...catchall]",
+      "regex": "^/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcatchall": "nxtPcatchall"
+      },
+      "namedRegex": "^/(?<nxtPcatchall>.+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about-us/activity",
+      "regex": "^/about\\-us/activity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us/activity(?:/)?$"
+    },
+    {
+      "page": "/about-us/news",
+      "regex": "^/about\\-us/news(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us/news(?:/)?$"
+    },
+    {
+      "page": "/about-us/partners",
+      "regex": "^/about\\-us/partners(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us/partners(?:/)?$"
+    },
+    {
+      "page": "/about-us/rimba-corridor-program",
+      "regex": "^/about\\-us/rimba\\-corridor\\-program(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us/rimba\\-corridor\\-program(?:/)?$"
+    },
+    {
+      "page": "/document",
+      "regex": "^/document(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/document(?:/)?$"
+    },
+    {
+      "page": "/maintenance",
+      "regex": "^/maintenance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/maintenance(?:/)?$"
+    },
+    {
+      "page": "/related-apps/kmis",
+      "regex": "^/related\\-apps/kmis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/related\\-apps/kmis(?:/)?$"
+    },
+    {
+      "page": "/related-apps/kmis/my-topic",
+      "regex": "^/related\\-apps/kmis/my\\-topic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/related\\-apps/kmis/my\\-topic(?:/)?$"
+    },
+    {
+      "page": "/related-apps/kmis/profile",
+      "regex": "^/related\\-apps/kmis/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/related\\-apps/kmis/profile(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

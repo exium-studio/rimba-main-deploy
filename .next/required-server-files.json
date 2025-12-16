@@ -82,7 +82,7 @@
         90,
         100
       ],
-      "unoptimized": false
+      "unoptimized": true
     },
     "devIndicators": false,
     "onDemandEntries": {

@@ -1,79 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/_not-found": {
-      "initialStatus": 404,
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/related-apps/kmis/profile": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/related-apps/kmis/profile",
-      "dataRoute": "/related-apps/kmis/profile.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/maintenance": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/maintenance",
-      "dataRoute": "/maintenance.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/about-us/activity": {
       "experimentalBypassFor": [
         {
@@ -98,7 +25,8 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/document": {
+    "/_not-found": {
+      "initialStatus": 404,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -111,32 +39,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/document",
-      "dataRoute": "/document.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/about-us/partners": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/about-us/partners",
-      "dataRoute": "/about-us/partners.rsc",
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -170,7 +74,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/related-apps/kmis": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -183,8 +87,56 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/related-apps/kmis",
+      "dataRoute": "/related-apps/kmis.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/related-apps/kmis/profile": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/related-apps/kmis/profile",
+      "dataRoute": "/related-apps/kmis/profile.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/about-us/partners": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/about-us/partners",
+      "dataRoute": "/about-us/partners.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -218,7 +170,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/related-apps/kmis": {
+    "/maintenance": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -231,8 +183,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/related-apps/kmis",
-      "dataRoute": "/related-apps/kmis.rsc",
+      "srcRoute": "/maintenance",
+      "dataRoute": "/maintenance.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -265,13 +217,61 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/document": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/document",
+      "dataRoute": "/document.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "a9253c373091ec989bd3038175b76a96",
-    "previewModeSigningKey": "1fcd11d0a8548f0b0b358943e78a2691bf4820f4378fd7fba500d16d5d99f97a",
-    "previewModeEncryptionKey": "ebed222c8810d7a23979bc306fe82c833934991c5bdb8dc6a25d363b8c4765fd"
+    "previewModeId": "78baa71046d01e8056bb48dc91457279",
+    "previewModeSigningKey": "12caab56247c65fc0db5c9e98a44a74c3e97f28b4f359db700f5b75319a0ed6c",
+    "previewModeEncryptionKey": "2361ddda0c8655f8d368650dc30a76835f9c9959dc8b3866159bb339e6a78a76"
   }
 }
